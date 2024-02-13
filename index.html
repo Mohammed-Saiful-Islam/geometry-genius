@@ -109,8 +109,18 @@
                     <div class="card-body">
                         <h2 class="card-title text-4xl">Pentagon!</h2>
                         <p class="text-3xl">Area (A) = 0.5 X p X p </p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter"
+                                placeholder="peri">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem"
+                                placeholder="apo">
+                        </div>
+                        <div>
+                            <p class="text-3xl">Area <span id="pentagon-area">0</span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculatePentagonArea()"
+                                class="btn btn-primary w-full text-2xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,6 +145,7 @@
     <script src="./scripts/triangle-calculate.js"></script>
     <script src="./scripts/rectangle-area.js"></script>
     <script src="./scripts/parallelogram-area.js"></script>
+    <script src="./scripts/pentagon-area.js"></script>
 </body>
 
 </html>
